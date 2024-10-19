@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <Nav></Nav>
-      <h1>Hello world</h1>
     </>
   )
 }
