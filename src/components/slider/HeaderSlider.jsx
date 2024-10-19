@@ -51,7 +51,7 @@ const HeaderSlider = () => {
         <div className="container pb-8 sm:pb-0">
             <Slider {...settings}>
                 {ImageList.map((data) =>(
-                    <div key={data.id}>
+                    <div key={data.id}> 
                         <div className="grid grid-cols-1 sm:grid-cols-2">
                             {/* text content section */}
                             <div
