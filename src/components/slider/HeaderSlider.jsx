@@ -33,11 +33,11 @@ const HeaderSlider = () => {
         dots :false,
         arrows: false,
         infinite: true,
-        speed: 2500,
+        speed: 800,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2800,
-        cssEase: "ease-im-out",
+        autoplaySpeed: 4000,
+        cssEase: "ease-in-out",
         pauseOnHover: false,
         pauseOnFocus:true
     };
@@ -51,7 +51,7 @@ const HeaderSlider = () => {
         <div className="container pb-8 sm:pb-0">
             <Slider {...settings}>
                 {ImageList.map((data) =>(
-                    <div>
+                    <div key={data.id}>
                         <div className="grid grid-cols-1 sm:grid-cols-2">
                             {/* text content section */}
                             <div
@@ -68,7 +68,7 @@ const HeaderSlider = () => {
                             <div className="order-1 sm:order-2">
                                 <div className="relative z-10">
                                     <img src={data.img} alt="Img_Slider" 
-                                    className="w-[300px] h-[300px]  sm:h[450px] sm:scale-125 object-contain mx-auto"
+                                    className="w-[300px] h-[300px]  sm:h[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
                                     />
                                 </div>
                             </div>
