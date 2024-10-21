@@ -32,13 +32,13 @@ const TopProducts = () => {
             {/* Header Section */}
 
                 <div className='text-left mb-24'>
-                    <p className='text-sm text-primary'>
+                    <p data-aos="fade-up" className='text-sm text-primary'>
                         Los Productos Más Vendidos Para Ti
                     </p>
-                    <h1 className='text-3xl font-bold'>
+                    <h1 data-aos="fade-up" className='text-3xl font-bold'>
                         Productos
                     </h1>
-                    <p className='text-xs text-gray-400'>
+                    <p data-aos="fade-up" className='text-xs text-gray-400'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto illo doloremque quia.
                     </p>
                 </div>
@@ -48,6 +48,7 @@ const TopProducts = () => {
                 {
                     ProductsData.map((data) =>(
                         <div key={data}
+                        data-aos="zoom-in"
                         className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]'>
                             {/* Image Section */}
                             <div className='h-[100px]'>
