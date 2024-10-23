@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"
 
 import TopProducts from "./components/TopProducts/TopProducts"
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <HeaderSlider></HeaderSlider>
       <Products></Products>
       <TopProducts></TopProducts>
+      <Footer></Footer>
     </>
   )
 }
