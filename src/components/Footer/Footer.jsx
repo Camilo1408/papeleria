@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow } from "react-icon
 import { FaMobileAlt } from "react-icons/fa";
 
 const BannerImg = {
-    backgorundImage: `url(${Banner})`,
+    backgroundImage: `url(${Banner})`,
     backgroundPosition:"bottom",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
@@ -35,7 +35,7 @@ const FooterLinks = [
 export const Footer = () => {
     return (
     <>
-    <div style={BannerImg} className="text-white mb-20">
+    <div style={BannerImg} className="text-white mt-20">
         <div className="container">
             <div data-aos= "zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
                 {/* Detalles de la empresa */}
